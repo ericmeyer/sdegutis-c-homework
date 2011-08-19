@@ -31,7 +31,11 @@ void free_node_list(node* n) {
 }
 
 void append_node(node* head, node* new_tail) {
-	// fill me in
+  node* tail = head;
+  while(tail->next) {
+   tail = tail->next;
+  }
+  tail->next = new_tail;
 }
 
 
